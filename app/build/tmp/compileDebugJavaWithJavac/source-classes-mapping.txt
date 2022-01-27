@@ -1,0 +1,27 @@
+com/example/firstapp1/ApplicationClass.java
+ com.example.firstapp1.ApplicationClass
+ com.example.firstapp1.ApplicationClass$1
+ com.example.firstapp1.ApplicationClass$MyAppsFlyerConversionListener
+com/example/firstapp1/ParserStr.java
+ com.example.firstapp1.ParserStr
+com/example/firstapp1/GistApi.java
+ com.example.firstapp1.GistApi
+com/example/firstapp1/BuildConfig.java
+ com.example.firstapp1.BuildConfig
+com/example/firstapp1/GameActivity.java
+ com.example.firstapp1.GameActivity
+ com.example.firstapp1.GameActivity$1
+ com.example.firstapp1.GameActivity$2
+ com.example.firstapp1.GameActivity$3
+ com.example.firstapp1.GameActivity$Opponent
+com/example/firstapp1/MainActivity.java
+ com.example.firstapp1.MainActivity
+ com.example.firstapp1.MainActivity$1
+ com.example.firstapp1.MainActivity$1$1
+ com.example.firstapp1.MainActivity$MyWebChromeClient
+ com.example.firstapp1.MainActivity$MyWebViewClient
+com/example/firstapp1/FaceBook.java
+ com.example.firstapp1.FaceBook
+ com.example.firstapp1.FaceBook$1
+com/example/firstapp1/Constants.java
+ com.example.firstapp1.Constants

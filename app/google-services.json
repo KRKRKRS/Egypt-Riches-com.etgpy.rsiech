@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "539917210149",
+    "project_id": "firsapp-87e4e",
+    "storage_bucket": "firsapp-87e4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539917210149:android:025b1f0a8d63358a01a5cc",
+        "android_client_info": {
+          "package_name": "com.example.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539917210149-u4qo7onnhr9l572uq75mk67cg6upb6su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw0lm7-HZ9Fj7A9x8nnzgIhoB4Xh1xqF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539917210149-u4qo7onnhr9l572uq75mk67cg6upb6su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
