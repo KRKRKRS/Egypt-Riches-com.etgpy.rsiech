@@ -52,7 +52,7 @@ public class ER extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (ifDevMode()) {              //TODO (!)
+        if (! ifDevMode()) {
             setContentView(R.layout.activity_main);
             webView = findViewById(R.id.webView);
             setWebView(webView);
@@ -82,9 +82,9 @@ public class ER extends AppCompatActivity {
 
                             // TODO
 
-//                            if (link != null) {
-//                                webView.loadUrl(link);
-//                            } else {
+                            if (link != null) {
+                                webView.loadUrl(link);
+                            } else {
 
                                 new Handler().postDelayed(new Runnable() {
                                     @Override
@@ -93,7 +93,7 @@ public class ER extends AppCompatActivity {
                                     }
                                 }, 5000);
 
-   //                         }
+                            }
 
                         } catch (IOException e) {
                             e.printStackTrace();
