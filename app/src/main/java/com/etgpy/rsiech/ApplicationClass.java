@@ -16,10 +16,10 @@ import java.util.Objects;
 
 
 public class ApplicationClass extends Application {
-    private static final String ONESIGNAL_APP_ID = Constants.oneSignalKey;
-    public static final String APPS_FLYER_KEY = Constants.devKEyDice;
+    private static final String ONESIGNAL_APP_ID = Constants.decode(Constants.oneSignalKey);
+    public static final String APPS_FLYER_KEY = Constants.decode(Constants.devKEyDice);
     public static String appsFlyerId;
-
+    public static boolean appsFlyerLoaded;
 
     @Override
     public void onCreate() {
@@ -56,26 +56,23 @@ public class ApplicationClass extends Application {
             for (String attrName : conversionDataMap.keySet())
                 Log.i("MyApp", "Conversion attribute: " + attrName + " = " + conversionDataMap.get(attrName));
 
-            ER.statusAppsFlyer = Objects.requireNonNull(conversionDataMap.get("af_status")).toString();
-
+            ER.statusAppsFlyer = Objects.requireNonNull(conversionDataMap.get(Constants.decode("YWZfc3RhdHVz")) ).toString();
             if (ER.statusAppsFlyer.equals("Non-organic")) {
-                String campaignStr = Objects.requireNonNull(conversionDataMap.get("campaign")).toString();
+                String campaignStr = Objects.requireNonNull(conversionDataMap.get(Constants.decode("Y2FtcGFpZ24="))).toString();
                 //нейминг
                 //sub6::sub7::keyCompany::sub2::sub3::sub1::sub4::sub5
                 Log.i("MyApp", "campaignStr " + campaignStr);
                 ParserStr parserStr = new ParserStr();
                 ER.strAppsFlyer = parserStr.parse(campaignStr);
             }
+            appsFlyerLoaded = true;
         }
 
-        public void onConversionDataFail(String errorMessage) {
-        }
+        public void onConversionDataFail(String errorMessage) { }
 
-        public void onAppOpenAttribution(Map<String, String> attributionData) {
-        }
+        public void onAppOpenAttribution(Map<String, String> attributionData) { }
 
-        public void onAttributionFailure(String errorMessage) {
-        }
+        public void onAttributionFailure(String errorMessage) { }
     }
 }
 

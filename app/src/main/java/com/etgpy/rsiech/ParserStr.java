@@ -7,6 +7,8 @@ import static com.etgpy.rsiech.Constants.devKEyDice;
 import static com.etgpy.rsiech.FaceBook.AID;
 import static com.example.firstapp1.BuildConfig.APPLICATION_ID;
 
+import android.util.Log;
+
 import com.onesignal.OneSignal;
 
 public class ParserStr {
@@ -17,17 +19,18 @@ public class ParserStr {
         String[] params = input.split("::");
         StringBuilder result = new StringBuilder();
         result.append(params[0]).append("?")
-                .append("bundle=" + APPLICATION_ID)
-                .append("&ad_id=").append(AID)
-                .append("&apps_id=").append(appsFlyerId)
-                .append("&dev_key=").append(devKEyDice);
+                .append(Constants.decode("YnVuZGxlPQ==")).append(APPLICATION_ID)
+                .append(Constants.decode("JmFkX2lkPQ==")).append(AID)
+                .append(Constants.decode("JmFwcHNfaWQ9")).append(appsFlyerId)
+                .append(Constants.decode("JmRldl9rZXk9")).append(Constants.decode(Constants.devKEyDice));
 
         for (int i = 1; i < params.length; i++) {
             result.append(keys[i]).append(params[i]);
         }
 
         String teamName = params[1];
-        OneSignal.sendTag("sub_app", teamName);
+        OneSignal.sendTag(Constants.decode("c3ViX2FwcA=="), teamName);
+        Log.i("MyApp", "parse str - " + String.valueOf(result));
         return String.valueOf(result);
     }
 
