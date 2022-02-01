@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.etgpy.rsiech"
-        minSdk 26
+        minSdk 21
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -41,12 +41,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
 
-    implementation 'com.facebook.android:facebook-applinks:latest.release'
-    implementation 'com.facebook.android:facebook-common:latest.release'
-    implementation 'com.facebook.android:facebook-core:latest.release'
-    implementation 'com.facebook.android:facebook-gamingservices:latest.release'
-    implementation 'com.facebook.android:facebook-login:latest.release'
-    implementation 'com.facebook.android:facebook-messenger:latest.release'
-    implementation 'com.facebook.android:facebook-share:latest.release'
+    implementation 'com.facebook.android:facebook-android-sdk:12.3.0'
     implementation 'com.appsflyer:af-android-sdk:6.4.2'
 }

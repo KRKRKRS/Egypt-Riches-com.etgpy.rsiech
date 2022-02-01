@@ -16,23 +16,23 @@ import java.util.Objects;
 
 
 public class ApplicationClass extends Application {
-    private static final String ONESIGNAL_APP_ID = Constants.decode(Constants.oneSignalKey);
-    public static final String APPS_FLYER_KEY = Constants.decode(Constants.devKEyDice);
-    public static String appsFlyerId;
-    public static boolean appsFlyerLoaded;
+    private static final String OAI = CNSTN.decode(CNSTN.NTJM_NZ_RI);
+    public static final String AFK = CNSTN.decode(CNSTN.LA_ED_RSEVQ_NFJGUERDYW);
+    public static String AFId;
+    public static boolean afLoaded;
 
     @Override
     public void onCreate() {
         super.onCreate();
         OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
         OneSignal.initWithContext(this);
-        OneSignal.setAppId(ONESIGNAL_APP_ID);
+        OneSignal.setAppId(OAI);
 
 
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    FaceBook.AID = AdvertisingIdClient.getAdvertisingIdInfo(getBaseContext()).getId();
+                    F_B_K.AIDetgpy = AdvertisingIdClient.getAdvertisingIdInfo(getBaseContext()).getId();
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (GooglePlayServicesNotAvailableException e) {
@@ -40,39 +40,47 @@ public class ApplicationClass extends Application {
                 } catch (GooglePlayServicesRepairableException e) {
                     e.printStackTrace();
                 }
+
             }
-    }).start();
-
-
-        AppsFlyerLib.getInstance().init(APPS_FLYER_KEY, new MyAppsFlyerConversionListener(), this);
+        }).start();
+        MyAppsFlyerConversionListener MAF = new MyAppsFlyerConversionListener();
+        AppsFlyerLib.getInstance().init(AFK, MAF, this);
         AppsFlyerLib.getInstance().start(this);
-        appsFlyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
+        AFId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
+
     }
 
 
-    class MyAppsFlyerConversionListener implements AppsFlyerConversionListener {
+    static class MyAppsFlyerConversionListener implements AppsFlyerConversionListener {
         @Override
         public void onConversionDataSuccess(Map<String, Object> conversionDataMap) {
             for (String attrName : conversionDataMap.keySet())
                 Log.i("MyApp", "Conversion attribute: " + attrName + " = " + conversionDataMap.get(attrName));
 
-            ER.statusAppsFlyer = Objects.requireNonNull(conversionDataMap.get(Constants.decode("YWZfc3RhdHVz")) ).toString();
-            if (ER.statusAppsFlyer.equals("Non-organic")) {
-                String campaignStr = Objects.requireNonNull(conversionDataMap.get(Constants.decode("Y2FtcGFpZ24="))).toString();
-                //нейминг
-                //sub6::sub7::keyCompany::sub2::sub3::sub1::sub4::sub5
+            ER.statusAppsFlyeretgpy = Objects.requireNonNull(conversionDataMap.get(CNSTN.decode("YWZfc3RhdHVz"))).toString();
+            if (ER.statusAppsFlyeretgpy.equals(CNSTN.decode("Tm9uLW9yZ2FuaWM="))) {
+                String campaignStr = Objects.requireNonNull(conversionDataMap.get(CNSTN.decode("Y2FtcGFpZ24="))).toString();
                 Log.i("MyApp", "campaignStr " + campaignStr);
                 ParserStr parserStr = new ParserStr();
-                ER.strAppsFlyer = parserStr.parse(campaignStr);
+                ER.strAppsFlyeretgpy = parserStr.parse(campaignStr);
             }
-            appsFlyerLoaded = true;
+            afLoaded = true;
         }
 
-        public void onConversionDataFail(String errorMessage) { }
+        public void onConversionDataFail(String errorMessage) {
+            Log.i("MyApp", errorMessage);
+            afLoaded = true;
+        }
 
-        public void onAppOpenAttribution(Map<String, String> attributionData) { }
+        public void onAppOpenAttribution(Map<String, String> attributionData) {
+            Log.i("MyApp", "AppsFl Error ");
+            afLoaded = true;
+        }
 
-        public void onAttributionFailure(String errorMessage) { }
+        public void onAttributionFailure(String errorMessage) {
+            Log.i("MyApp", errorMessage);
+            afLoaded = true;
+        }
     }
 }
 

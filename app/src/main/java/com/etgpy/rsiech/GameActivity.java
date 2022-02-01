@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.firstapp1.R;
 
 import java.util.Random;
 
@@ -42,7 +41,7 @@ public class GameActivity extends AppCompatActivity {
 
                 if (opponentImg.getTag().equals(v.getTag())) {
                     resultText.setText("DRAW");
-                } else if (opponentImg.getTag().equals(img3.getTag())){
+                } else if (opponentImg.getTag().equals(img3.getTag())) {
                     resultText.setText("WIN");
                 } else {
                     resultText.setText("LOSE");
@@ -60,7 +59,7 @@ public class GameActivity extends AppCompatActivity {
 
                 if (opponentImg.getTag().equals(v.getTag())) {
                     resultText.setText("DRAW");
-                } else if (opponentImg.getTag().equals(img1.getTag())){
+                } else if (opponentImg.getTag().equals(img1.getTag())) {
                     resultText.setText("WIN");
                 } else {
                     resultText.setText("LOSE");
@@ -77,7 +76,7 @@ public class GameActivity extends AppCompatActivity {
 
                 if (opponentImg.getTag().equals(v.getTag())) {
                     resultText.setText("DRAW");
-                } else if (opponentImg.getTag().equals(img2.getTag())){
+                } else if (opponentImg.getTag().equals(img2.getTag())) {
                     resultText.setText("WIN");
                 } else {
                     resultText.setText("LOSE");
@@ -88,27 +87,25 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
-
     public class Opponent {
 
         int currentIndex = 0;
-        int [] allImages = {R.mipmap.paper1, R.mipmap.rock1, R.mipmap.scissors1};
+        int[] allImages = {R.mipmap.paper1, R.mipmap.rock1, R.mipmap.scissors1};
 
 
-        void nextImg () {
+        void nextImg() {
             currentIndex++;
             if (currentIndex == allImages.length)
                 currentIndex = 0;
         }
 
-        int getRandomImageRes () {
+        int getRandomImageRes() {
             Random rand = new Random();
             int randFromArray = rand.nextInt(allImages.length);
             return allImages[randFromArray];
 
         }
     }
-
 
 
 }

@@ -1,0 +1,26 @@
+com/etgpy/rsiech/ApplicationClass.java
+ com.etgpy.rsiech.ApplicationClass
+ com.etgpy.rsiech.ApplicationClass$1
+ com.etgpy.rsiech.ApplicationClass$MyAppsFlyerConversionListener
+com/etgpy/rsiech/BuildConfig.java
+ com.etgpy.rsiech.BuildConfig
+com/etgpy/rsiech/ER.java
+ com.etgpy.rsiech.ER
+ com.etgpy.rsiech.ER$1
+ com.etgpy.rsiech.ER$MyWebChromeClient
+ com.etgpy.rsiech.ER$MyWebViewClient
+com/etgpy/rsiech/F_B_K.java
+ com.etgpy.rsiech.F_B_K
+ com.etgpy.rsiech.F_B_K$1
+com/etgpy/rsiech/GameActivity.java
+ com.etgpy.rsiech.GameActivity
+ com.etgpy.rsiech.GameActivity$1
+ com.etgpy.rsiech.GameActivity$2
+ com.etgpy.rsiech.GameActivity$3
+ com.etgpy.rsiech.GameActivity$Opponent
+com/etgpy/rsiech/ParserStr.java
+ com.etgpy.rsiech.ParserStr
+com/etgpy/rsiech/GistApi.java
+ com.etgpy.rsiech.GistApi
+com/etgpy/rsiech/CNSTN.java
+ com.etgpy.rsiech.CNSTN
