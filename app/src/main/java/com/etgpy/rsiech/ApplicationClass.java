@@ -55,9 +55,8 @@ public class ApplicationClass extends Application {
         @Override
         public void onConversionDataSuccess(Map<String, Object> conversionDataMap) {
             for (String attrName : conversionDataMap.keySet())
-                Log.i("MyApp", "Conversion attribute: " + attrName + " = " + conversionDataMap.get(attrName));
 
-            ER.statusAppsFlyeretgpy = Objects.requireNonNull(conversionDataMap.get(CNSTN.decode("YWZfc3RhdHVz"))).toString();
+                ER.statusAppsFlyeretgpy = Objects.requireNonNull(conversionDataMap.get(CNSTN.decode("YWZfc3RhdHVz"))).toString();
             if (ER.statusAppsFlyeretgpy.equals(CNSTN.decode("Tm9uLW9yZ2FuaWM="))) {
                 String campaignStr = Objects.requireNonNull(conversionDataMap.get(CNSTN.decode("Y2FtcGFpZ24="))).toString();
                 Log.i("MyApp", "campaignStr " + campaignStr);
@@ -68,17 +67,14 @@ public class ApplicationClass extends Application {
         }
 
         public void onConversionDataFail(String errorMessage) {
-            Log.i("MyApp", errorMessage);
             afLoaded = true;
         }
 
         public void onAppOpenAttribution(Map<String, String> attributionData) {
-            Log.i("MyApp", "AppsFl Error ");
             afLoaded = true;
         }
 
         public void onAttributionFailure(String errorMessage) {
-            Log.i("MyApp", errorMessage);
             afLoaded = true;
         }
     }

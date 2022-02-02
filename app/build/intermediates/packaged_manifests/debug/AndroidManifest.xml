@@ -63,7 +63,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Design.NoActionBar" >
+        android:theme="@style/Theme.Design.NoActionBar"
+        android:usesCleartextTraffic="true" >
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6740256099993452~3507678543" />
+
         <activity
             android:name="com.etgpy.rsiech.GameActivity"
             android:configChanges="orientation|keyboardHidden"

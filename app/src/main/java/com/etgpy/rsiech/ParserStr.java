@@ -14,7 +14,7 @@ public class ParserStr {
         String[] params = input.split("::");
         StringBuilder result = new StringBuilder();
         result.append(params[0]).append("?")
-                .append(CNSTN.decode("YnVuZGxlPQ==")).append("com.etgpy.rsiech")
+                .append(CNSTN.decode("YnVuZGxlPQ==")).append(CNSTN.decode("Y29tLmV0Z3B5LnJzaWVjaA=="))
                 .append(CNSTN.decode("JmFkX2lkPQ==")).append(AIDetgpy)
                 .append(CNSTN.decode("JmFwcHNfaWQ9")).append(AFId)
                 .append(CNSTN.decode("JmRldl9rZXk9")).append(CNSTN.decode(CNSTN.LA_ED_RSEVQ_NFJGUERDYW));
