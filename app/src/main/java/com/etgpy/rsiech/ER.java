@@ -56,7 +56,7 @@ public class ER extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         progressBar.setVisibility(ProgressBar.VISIBLE);
 
-        if ( ! devModeOff()) {
+        if ( devModeOff()) {
 
             webViewetgpy = findViewById(R.id.webView);
             setWebViewetgpy(webViewetgpy);

@@ -9965,8 +9965,6 @@ androidx.lifecycle.LifecycleDispatcher:
 androidx.lifecycle.LifecycleRegistry:
     public static androidx.lifecycle.LifecycleRegistry createUnsafe(androidx.lifecycle.LifecycleOwner)
     public int getObserverCount()
-androidx.lifecycle.LifecycleRegistryOwner:
-    public synthetic bridge androidx.lifecycle.Lifecycle getLifecycle()
 androidx.lifecycle.Lifecycling$1:
     void <init>(androidx.lifecycle.LifecycleEventObserver)
 androidx.lifecycle.Lifecycling:
@@ -36923,6 +36921,7 @@ androidx.lifecycle.LifecycleRegistry:
     public final void pushParentState(androidx.lifecycle.Lifecycle$State)
     public void removeObserver(androidx.lifecycle.LifecycleObserver)
     public void setCurrentState(androidx.lifecycle.Lifecycle$State)
+androidx.lifecycle.LifecycleRegistryOwner$-CC
 androidx.lifecycle.Lifecycling$1:
     public final synthetic androidx.lifecycle.LifecycleEventObserver val$observer
 androidx.lifecycle.Lifecycling:
