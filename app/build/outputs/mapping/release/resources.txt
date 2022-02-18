@@ -109,7 +109,7 @@ Referenced Strings:
   0000
   00000
   0000ffff
-  040606
+  040607
   0_auth_logger_id
   0x%02x
   0x%08x
@@ -279,11 +279,9 @@ Referenced Strings:
   AppsFlyerTimePassedSincePrevLaunch
   AppsFlyer_6.4.2
   Array
-  AsldcInflateDelegate
   AudioAttributesCompat:
   Authorization
   AutoCompleteTextView
-  AvdcInflateDelegate
   BACKGROUND
   BASELINE
   BITMAP
@@ -365,7 +363,6 @@ Referenced Strings:
   COUNT
   CRC
   CREATED
-  CSLCompat
   CURRENT_MONTH_KEY
   CURRENT_STATE
   CUSTOM
@@ -384,10 +381,8 @@ Referenced Strings:
   CollapsingTextHelper
   CommandHandler
   CompanionObject
-  ComplexColorCompat
   ComponentDiscovery
   CompositeGAC
-  CompoundButtonCompat
   Connection
   ConnectionStatusConfig
   ConnectionTracker
@@ -466,8 +461,6 @@ Referenced Strings:
   DialogRedirect
   DirectExecutor
   DiscouragedPrivateApi
-  DrawableCompat
-  DrawableDelegate
   DynamiteLoaderClassLoader.class
   E
   E3F9E1E0CF99D0E56A055BA65E241B3399F7C...
@@ -806,7 +799,6 @@ Referenced Strings:
   NATIVE_WITH_FALLBACK
   NAVIGATION_NEXT_TAG
   NAVIGATION_PREV_TAG
-  NDA0
   NETWORK
   NETWORK_ERROR
   NO
@@ -859,7 +851,6 @@ Referenced Strings:
   ON_STOP
   OPPO
   OPTIONS
-  OP_POST_NOTIFICATION
   OP_SET_MAX_LIFECYCLE
   OSAndroid
   OSH_LocationHandlerThread
@@ -967,7 +958,6 @@ Referenced Strings:
   PathParser
   Places
   PlacesKit
-  PopupWindowCompatApi21
   Pragma
   Preference
   PrivacyProtection
@@ -1144,7 +1134,6 @@ Referenced Strings:
   SupportSQLite
   SyntheticAccessor
   SystemAlarmDispatcher
-  SystemAlarmScheduler
   SystemAlarmService
   SystemFgDispatcher
   SystemFgService
@@ -1361,8 +1350,6 @@ Referenced Strings:
   VISIBLE
   VIVO
   Variant
-  VdcInflateDelegate
-  VectorDrawableCompat
   Vertical
   View
   ViewCompat
@@ -1402,7 +1389,6 @@ Referenced Strings:
   WorkTimer
   WorkerFactory
   WorkerWrapper
-  WrappedDrawableApi21
   WrkDbPathHelper
   WrkMgrInitializer
   WrkTimerRunnable
@@ -1415,6 +1401,7 @@ Referenced Strings:
   Xiaomi
   Y2YzYTBlNzUtZjk2Yy00OWFkLWFmMTMtMDFkZ...
   YWZfc3RhdHVz
+  Z2FwcHM9NDA0
   ZUK
   _
   _Impl
@@ -1449,8 +1436,6 @@ Referenced Strings:
   _valueToSum
   a
   a2
-  a2.f
-  a2.i
   a4b7452e2ed8f5f191058ca7bbfd26b0d3214bfc
   aa
   aam_rules
@@ -1776,8 +1761,6 @@ Referenced Strings:
   android.intent.category.OPENABLE
   android.intent.extra.INTENT
   android.intent.extra.PROCESS_TEXT_REA...
-  android.intent.extra.REFERRER
-  android.intent.extra.REFERRER_NAME
   android.intent.extra.update_applicati...
   android.intent.extra.update_applicati...
   android.media.metadata.ADVERTISEMENT
@@ -1977,7 +1960,6 @@ Referenced Strings:
   androidx.view.accessibility.Accessibi...
   androidx.view.accessibility.Accessibi...
   androidx.view.accessibility.Accessibi...
-  androidx.work.impl.background.gcm.Gcm...
   androidx.work.impl.background.systema...
   androidx.work.impl.workers.Constraint...
   androidx.work.util.id
@@ -1985,7 +1967,6 @@ Referenced Strings:
   androidx.work.workdb
   androidx:appcompat
   anim
-  animator
   anonClient
   anon_id
   anonymizeUser
@@ -2046,7 +2027,6 @@ Referenced Strings:
   applink_class
   applink_url
   applinks_lib_included
-  appops
   apps/
   appsFlyerAdRevenueCount
   appsFlyerCount
@@ -2086,7 +2066,6 @@ Referenced Strings:
   authType
   auth_type
   authorization
-  autoMirrored
   autoRenewing
   auto_event_mapping_android
   auto_event_setup_enabled
@@ -2145,6 +2124,7 @@ Referenced Strings:
   bytes
   c
   c103703e120ae8cc73c9248622f3cd1e
+  c2.e
   c56fb7d591ba6704df047fd98f535372fea00211
   c:
   cacheResponse
@@ -2165,7 +2145,6 @@ Referenced Strings:
   cct_over_app_switch
   cct_prefetching
   cell
-  centerColor
   centerX
   centerY
   change_badge
@@ -2176,7 +2155,6 @@ Referenced Strings:
   char
   charset
   checkLicense
-  checkOpNoThrow
   checkServerTrusted
   checkable
   checkbox
@@ -2503,9 +2481,9 @@ Referenced Strings:
   com.onesignal.NotificationServiceExte...
   com.onesignal.PermissionsActivity
   com.onesignal.PrivacyConsent
-  com.onesignal.r2
+  com.onesignal.q2
   com.onesignal.suppressLaunchURLs
-  com.onesignal.y4
+  com.onesignal.x4
   com.oppo.launcher
   com.oppo.unsettledevent
   com.parse.bolts.measurement_event
@@ -2602,7 +2580,6 @@ Referenced Strings:
   currencyCode
   current
   currentChildView
-  currentIndex
   currentProcessName
   cursor
   custom
@@ -2614,7 +2591,6 @@ Referenced Strings:
   custom_tab
   customizedIcon
   d
-  d2.e
   d_dpi
   dalvik.system.CloseGuard
   dalvik.vm.isa.arm.features
@@ -2721,9 +2697,9 @@ Referenced Strings:
   drawableRight
   drawableStart
   dscr
-  duration
   e
   e.stackTrace
+  e2.c
   e2e
   editable
   efbbbf
@@ -2750,9 +2726,6 @@ Referenced Strings:
   encodedClaims
   encodedHeaderString
   encoding
-  endColor
-  endX
-  endY
   end_time
   engagement
   engmnt_source
@@ -2818,7 +2791,6 @@ Referenced Strings:
   extra_prms
   extras
   f
-  f2.c
   facebook
   facebook.com
   facebook_app_id
@@ -2908,9 +2880,6 @@ Referenced Strings:
   file
   file.name
   file_id
-  fillAlpha
-  fillColor
-  fillType
   find
   findTouchTargetView
   findTrustAnchorByIssuerAndSignature
@@ -2939,7 +2908,6 @@ Referenced Strings:
   font_weight
   format
   found
-  fraction
   fragment
   fragmentActivity.intent
   frame
@@ -2953,6 +2921,8 @@ Referenced Strings:
   from_fg
   full_data
   fx_app
+  g2.g
+  g2.k
   ga_trackingId
   gaid
   gaidError
@@ -3000,9 +2970,7 @@ Referenced Strings:
   getId
   getInstance
   getLayoutAlignment
-  getLayoutDirection
   getMap
-  getMaxAvailableHeight
   getModule
   getOriginalJson
   getPurchaseHistory
@@ -3048,8 +3016,6 @@ Referenced Strings:
   googleplay
   googleplaystore
   gps
-  gradient
-  gradientRadius
   grant_type
   granted
   grantedScopes
@@ -3069,8 +3035,6 @@ Referenced Strings:
   guideline
   gzip
   h2
-  h2.g
-  h2.k
   h2_prior_knowledge
   handleLifecycleEvent
   handler
@@ -3209,7 +3173,6 @@ Referenced Strings:
   integrity_detect
   intent
   intent_extra_data_key
-  interpolator
   interrupted
   interval
   interval_duration
@@ -3226,7 +3189,6 @@ Referenced Strings:
   isLat
   isLimitAdTrackingEnabled
   isManual
-  isProjected
   isPush
   isPushDisabled
   isSubscribed
@@ -3263,6 +3225,7 @@ Referenced Strings:
   items
   ivc
   iw
+  j2.a
   jClass
   java.lang.Boolean
   java.lang.Byte
@@ -3303,12 +3266,10 @@ Referenced Strings:
   json_payload
   jti
   k
-  k2.a
   katana_proxy_auth
   key
   keyPropDisableAFKeystore
   keyedTags
-  keyframe
   keyguard
   keys
   kid
@@ -3446,7 +3407,6 @@ Referenced Strings:
   mAccessibilityDelegate
   mAttachInfo
   mAutoDisconnectTaskLock
-  mButtonDrawable
   mContentInsets
   mDrawableCache
   mH
@@ -3460,7 +3420,6 @@ Referenced Strings:
   mOnClickListener
   mOnKeyListener
   mOnTouchListener
-  mOverlapAnchor
   mParams
   mResourcesImpl
   mServedView
@@ -3545,6 +3504,8 @@ Referenced Strings:
   multipart/parallel
   mv
   n
+  n2.s
+  n2.y
   na
   name
   native
@@ -3586,15 +3547,12 @@ Referenced Strings:
   number
   o
   o2
-  o2.s
-  o2.y
   oaid
   oauth
   oauth/access_token
   oauth/authorize
   obfuscatedIdentifier
   obj
-  objectAnimator
   objects
   observeForever
   observer
@@ -3648,7 +3606,7 @@ Referenced Strings:
   onelink_id
   onelink_ver
   onelnk.com
-  onesignal/android/040606
+  onesignal/android/040607
   onesignalData
   onesignal_bgimage_default_image
   onesignal_bgimage_notif_body_color
@@ -3669,7 +3627,6 @@ Referenced Strings:
   operator
   optional
   options
-  ordering
   org.adw.launcher
   org.adw.launcher.counter.SEND
   org.adwfreak.launcher
@@ -3741,7 +3698,6 @@ Referenced Strings:
   partner_data
   password
   path
-  pathData
   pathID
   pathType
   path_type
@@ -3811,10 +3767,6 @@ Referenced Strings:
   promo_code
   prompts
   property
-  propertyName
-  propertyValuesHolder
-  propertyXName
-  propertyYName
   props
   protocolSelected
   protocols
@@ -3904,8 +3856,6 @@ Referenced Strings:
   remove_width_margin
   removes
   rendering_complete
-  repeatCount
-  repeatMode
   replace
   replacement
   request
@@ -3987,7 +3937,6 @@ Referenced Strings:
   room_table_modification_trigger_
   rootView
   rooted
-  rotation
   rs
   rsvp_event
   rule
@@ -4014,8 +3963,6 @@ Referenced Strings:
   savedProperties
   sc_o
   scale
-  scaleX
-  scaleY
   schedule_requested_at
   scheme
   scope
@@ -4086,11 +4033,9 @@ Referenced Strings:
   setEpicenterBounds
   setExclusiveCheckable
   setExtension
-  setFrame
   setHostname
   setImeiData
   setIsUpdate
-  setLayoutDirection
   setListener
   setMessageCount
   setOaidData
@@ -4100,7 +4045,6 @@ Referenced Strings:
   setUseSessionTickets
   setUserEmails
   setValue
-  setWindowLayoutType
   sha1_advertiserId
   sha1_advertiser_id
   sha1_advertising_id
@@ -4157,11 +4101,7 @@ Referenced Strings:
   sso
   standard
   start
-  startColor
   startConnection
-  startOffset
-  startX
-  startY
   start_with
   statType
   state
@@ -4174,12 +4114,6 @@ Referenced Strings:
   store
   string
   string_response
-  strokeAlpha
-  strokeColor
-  strokeLineCap
-  strokeLineJoin
-  strokeMiterLimit
-  strokeWidth
   styles
   su
   sub
@@ -4218,7 +4152,6 @@ Referenced Strings:
   table_id
   tag
   tags
-  target
   targetApp
   target_url
   target_user_id
@@ -4237,7 +4170,6 @@ Referenced Strings:
   thresholds
   throwableMethods
   ti
-  tileMode
   time
   timeProvider
   time_in_app
@@ -4248,8 +4180,6 @@ Referenced Strings:
   timestamp
   timezone
   timezone_id
-  tint
-  tintMode
   title
   tn
   to
@@ -4268,9 +4198,6 @@ Referenced Strings:
   trailers
   transaction_id
   transient
-  transition
-  translateX
-  translateY
   translationAlpha
   translationX
   translationXCurveDownwards
@@ -4284,14 +4211,10 @@ Referenced Strings:
   trigger_max_content_delay
   trigger_timer:
   triggers
-  trimPathEnd
-  trimPathOffset
-  trimPathStart
   true
   ts
   ttl
   ttr
-  tun0
   tv
   typ
   type
@@ -4353,14 +4276,10 @@ Referenced Strings:
   val
   validateAndTrackInAppPurchase
   value
-  valueFrom
   valueOf
-  valueTo
-  valueType
   variant_id
   variants
   vary
-  vector
   version
   versionCode
   versionSpec
@@ -4378,8 +4297,6 @@ Referenced Strings:
   viewHierarchy
   viewMapKey
   viewToStringForE2E
-  viewportHeight
-  viewportWidth
   vis
   visibility
   vzw.os.rooted
@@ -4410,12 +4327,14 @@ Referenced Strings:
   xml
   xps
   xx
+  y1.f0
+  y1.w
   yMMMEd
   y_px
   ydp
   yi
-  z1.f0
-  z1.w
+  z1.f
+  z1.i
   zh
   
   
@@ -4561,7 +4480,6 @@ Marking attr:titleTextStyle:2130904092 used because its prefix matches string po
 Marking id:title:2131231209 used because its prefix matches string pool constant title
 Marking id:titleDividerNoCustom:2131231210 used because its prefix matches string pool constant title
 Marking id:title_template:2131231211 used because its prefix matches string pool constant title
-Marking attr:duration:2130903409 used because its prefix matches string pool constant duration
 Marking attr:customBoolean:2130903359 used because its prefix matches string pool constant custom
 Marking attr:customColorDrawableValue:2130903360 used because its prefix matches string pool constant custom
 Marking attr:customColorValue:2130903361 used because its prefix matches string pool constant custom
@@ -5715,7 +5633,6 @@ Marking id:item3:2131230974 used because its prefix matches string pool constant
 Marking id:item4:2131230975 used because its prefix matches string pool constant it
 Marking id:item_touch_helper_previous_elevation:2131230976 used because its prefix matches string pool constant it
 Marking string:item_view_role_description:2131755093 used because its prefix matches string pool constant it
-Marking attr:tintMode:2130904078 used because its prefix matches string pool constant tintMode
 Marking attr:limitBoundsTo:2130903678 used because its prefix matches string pool constant limit
 Marking attr:measureWithLargestChild:2130903746 used because its prefix matches string pool constant me
 Marking attr:menu:2130903747 used because its prefix matches string pool constant me
@@ -6145,12 +6062,9 @@ Marking color:primary_text_default_material_dark:2131034712 used because its pre
 Marking color:primary_text_default_material_light:2131034713 used because its prefix matches string pool constant pri
 Marking color:primary_text_disabled_material_dark:2131034714 used because its prefix matches string pool constant pri
 Marking color:primary_text_disabled_material_light:2131034715 used because its prefix matches string pool constant pri
-Marking attr:tint:2130904077 used because its prefix matches string pool constant tint
-Marking attr:tintMode:2130904078 used because its prefix matches string pool constant tint
 Marking id:SHOW_ALL:2131230728 used because its prefix matches string pool constant SHOW
 Marking id:SHOW_PATH:2131230729 used because its prefix matches string pool constant SHOW
 Marking id:SHOW_PROGRESS:2131230730 used because its prefix matches string pool constant SHOW
-Marking attr:rotationCenterId:2130903873 used because its prefix matches string pool constant rotation
 Marking id:time:2131231208 used because its prefix matches string pool constant time
 Marking string:character_counter_content_description:2131755040 used because its prefix matches string pool constant char
 Marking string:character_counter_overflowed_content_description:2131755041 used because its prefix matches string pool constant char
@@ -6159,18 +6073,6 @@ Marking id:group_divider:2131230944 used because its prefix matches string pool 
 Marking id:grouping:2131230945 used because its prefix matches string pool constant group
 Marking id:groups:2131230946 used because its prefix matches string pool constant group
 Marking id:dimensions:2131230896 used because its prefix matches string pool constant dimension
-Marking attr:transitionDisable:2130904115 used because its prefix matches string pool constant transition
-Marking attr:transitionEasing:2130904116 used because its prefix matches string pool constant transition
-Marking attr:transitionFlags:2130904117 used because its prefix matches string pool constant transition
-Marking attr:transitionPathRotate:2130904118 used because its prefix matches string pool constant transition
-Marking attr:transitionShapeAppearance:2130904119 used because its prefix matches string pool constant transition
-Marking id:transitionToEnd:2131231216 used because its prefix matches string pool constant transition
-Marking id:transitionToStart:2131231217 used because its prefix matches string pool constant transition
-Marking id:transition_current_scene:2131231218 used because its prefix matches string pool constant transition
-Marking id:transition_layout_save:2131231219 used because its prefix matches string pool constant transition
-Marking id:transition_position:2131231220 used because its prefix matches string pool constant transition
-Marking id:transition_scene_layoutid_cache:2131231221 used because its prefix matches string pool constant transition
-Marking id:transition_transform:2131231222 used because its prefix matches string pool constant transition
 Marking attr:counterEnabled:2130903350 used because its prefix matches string pool constant count
 Marking attr:counterMaxLength:2130903351 used because its prefix matches string pool constant count
 Marking attr:counterOverflowTextAppearance:2130903352 used because its prefix matches string pool constant count
@@ -6296,7 +6198,6 @@ Marking id:decelerate:2131230884 used because its prefix matches string pool con
 Marking id:decelerateAndComplete:2131230885 used because its prefix matches string pool constant decelerate
 Marking id:add:2131230791 used because its prefix matches string pool constant add
 Marking id:result_text:2131231103 used because its prefix matches string pool constant res
-Marking attr:strokeWidth:2130903942 used because its prefix matches string pool constant strokeWidth
 Marking id:skipped:2131231142 used because its prefix matches string pool constant skipped
 Marking attr:scopeUris:2130903878 used because its prefix matches string pool constant scope
 Marking attr:labelBehavior:2130903599 used because its prefix matches string pool constant label
@@ -6514,7 +6415,6 @@ Marking attr:android_hint:-1 used because its prefix matches string pool constan
 Marking attr:android_theme:-1 used because its prefix matches string pool constant android
 Marking attr:android_inflatedId:-1 used because its prefix matches string pool constant android
 Marking attr:android_borderlessButtonStyle:-1 used because its prefix matches string pool constant android
-Marking attr:targetId:2130903990 used because its prefix matches string pool constant target
 Marking id:BOTTOM_END:2131230721 used because its prefix matches string pool constant BOTTOM
 Marking id:BOTTOM_START:2131230722 used because its prefix matches string pool constant BOTTOM
 Marking attr:layout_constraintEnd_toStartOf:2130903626 used because its prefix matches string pool constant layout_constraintEnd_toStartOf
@@ -6592,7 +6492,6 @@ Marking layout:select_dialog_item_material:2131427449 used because its prefix ma
 Marking layout:select_dialog_multichoice_material:2131427450 used because its prefix matches string pool constant select
 Marking layout:select_dialog_singlechoice_material:2131427451 used because its prefix matches string pool constant select
 Marking styleable:Transform:-1 used because its prefix matches string pool constant Transform
-Marking attr:strokeColor:2130903941 used because its prefix matches string pool constant strokeColor
 Marking attr:subMenuArrow:2130903943 used because its prefix matches string pool constant sub
 Marking attr:subheaderColor:2130903944 used because its prefix matches string pool constant sub
 Marking attr:subheaderInsetEnd:2130903945 used because its prefix matches string pool constant sub
@@ -7237,7 +7136,7 @@ drawable:m3_appbar_background:2131165343 => [attr:colorSurface:2130903292, color
 drawable:m3_popupmenu_background_overlay:2131165344 => [attr:colorSurface:2130903292, color:m3_popupmenu_overlay_color:2131034283]
 drawable:m3_radiobutton_ripple:2131165345 => [color:m3_radiobutton_ripple_tint:2131034285]
 drawable:m3_selection_control_ripple:2131165346 => [color:m3_selection_control_ripple_color_selector:2131034430]
-drawable:m3_tabs_background:2131165347 => [attr:colorSurfaceVariant:2130903294, attr:colorSurface:2130903292]
+drawable:m3_tabs_background:2131165347 => [attr:colorSurface:2130903292, attr:colorSurfaceVariant:2130903294]
 drawable:m3_tabs_transparent_background:2131165350 => [attr:colorSurfaceVariant:2130903294]
 drawable:material_cursor_drawable:2131165351 => [dimen:material_cursor_inset_bottom:2131099992, dimen:material_cursor_inset_top:2131099993, dimen:material_cursor_width:2131099994, attr:colorPrimary:2130903282]
 drawable:material_ic_keyboard_arrow_next_black_24dp:2131165356 => [drawable:material_ic_keyboard_arrow_right_black_24dp:2131165358, drawable:material_ic_keyboard_arrow_left_black_24dp:2131165355]
@@ -8632,7 +8531,6 @@ anim:abc_fade_in:2130771968,
    attr:drawableTintMode:2130903402,
    attr:drawableTopCompat:2130903403,
    attr:dropDownListViewStyle:2130903407,
-   attr:duration:2130903409,
    attr:editTextStyle:2130903413,
    attr:elevation:2130903414,
    attr:elevationOverlayAccentColor:2130903415,
@@ -8889,7 +8787,6 @@ anim:abc_fade_in:2130771968,
    attr:rangeFillColor:2130903858,
    attr:ratingBarStyle:2130903859,
    attr:recyclerViewStyle:2130903866,
-   attr:rotationCenterId:2130903873,
    attr:scaleFromTextSize:2130903877,
    attr:scopeUris:2130903878,
    attr:searchHintIcon:2130903882,
@@ -8919,8 +8816,6 @@ anim:abc_fade_in:2130771968,
    attr:statusBarBackground:2130903938,
    attr:statusBarForeground:2130903939,
    attr:statusBarScrim:2130903940,
-   attr:strokeColor:2130903941,
-   attr:strokeWidth:2130903942,
    attr:subMenuArrow:2130903943,
    attr:subheaderColor:2130903944,
    attr:subheaderInsetEnd:2130903945,
@@ -8936,7 +8831,6 @@ anim:abc_fade_in:2130771968,
    attr:suffixTextAppearance:2130903955,
    attr:suffixTextColor:2130903956,
    attr:suggestionRowLayout:2130903957,
-   attr:targetId:2130903990,
    attr:telltales_tailColor:2130903991,
    attr:telltales_tailScale:2130903992,
    attr:telltales_velocityMode:2130903993,
@@ -9041,11 +8935,6 @@ anim:abc_fade_in:2130771968,
    attr:touchAnchorId:2130904102,
    attr:touchAnchorSide:2130904103,
    attr:touchRegionId:2130904104,
-   attr:transitionDisable:2130904115,
-   attr:transitionEasing:2130904116,
-   attr:transitionFlags:2130904117,
-   attr:transitionPathRotate:2130904118,
-   attr:transitionShapeAppearance:2130904119,
    attr:upDuration:2130904124,
    attr:values:2130904127,
    attr:viewInflaterClass:2130904130,
@@ -9761,13 +9650,7 @@ anim:abc_fade_in:2130771968,
    id:top:2131231213,
    id:topPanel:2131231214,
    id:touch_outside:2131231215,
-   id:transitionToEnd:2131231216,
-   id:transitionToStart:2131231217,
    id:transition_current_scene:2131231218,
-   id:transition_layout_save:2131231219,
-   id:transition_position:2131231220,
-   id:transition_scene_layoutid_cache:2131231221,
-   id:transition_transform:2131231222,
    id:unknown:2131231226,
    id:up:2131231228,
    id:view_offset_helper:2131231231,
@@ -10106,9 +9989,6 @@ anim:abc_fade_in:2130771968,
    styleable:ActionMenuItemView:-1,
    styleable:ActionMode:-1,
    styleable:AlertDialog:-1,
-   styleable:AnimatedStateListDrawableCompat:-1,
-   styleable:AnimatedStateListDrawableItem:-1,
-   styleable:AnimatedStateListDrawableTransition:-1,
    styleable:AppBarLayout_Layout:-1,
    styleable:AppCompatImageView:-1,
    styleable:AppCompatSeekBar:-1,
@@ -10143,8 +10023,6 @@ anim:abc_fade_in:2130771968,
    styleable:ForegroundLinearLayout:-1,
    styleable:Fragment:-1,
    styleable:FragmentContainerView:-1,
-   styleable:GradientColor:-1,
-   styleable:GradientColorItem:-1,
    styleable:Layout:-1,
    styleable:LinearLayoutCompat:-1,
    styleable:ListPopupWindow:-1,
@@ -10554,28 +10432,26 @@ Skipped unused resource res/drawable/design_fab_background.xml: 285 bytes (repla
 Skipped unused resource res/drawable/design_snackbar_background.xml: 525 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_clock_black_24dp.xml: 765 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_keyboard_black_24dp.xml: 866 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-v24/ic_launcher_foreground.xml: 1793 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_m3_chip_check.xml: 851 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_m3_chip_checked_circle.xml: 1288 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_m3_chip_close.xml: 669 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/ic_mtrl_checked_circle.xml: 692 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/m3_popupmenu_background_overlay.xml: 735 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-v21/m3_tabs_background.xml: 670 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/m3_tabs_line_indicator.xml: 381 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/m3_tabs_rounded_line_indicator.xml: 925 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/material_ic_menu_arrow_up_black_24dp.xml: 725 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_dialog_background.xml: 1154 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_ic_error.xml: 698 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-v21/mtrl_navigation_bar_item_background.xml: 193 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_popupmenu_background.xml: 735 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_popupmenu_background_overlay.xml: 735 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_tabs_default_indicator.xml: 421 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/m3_appbar_background.xml: 446 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/m3_popupmenu_background_overlay.xml: 1334 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/m3_radiobutton_ripple.xml: 298 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/m3_selection_control_ripple.xml: 330 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/m3_tabs_background.xml: 685 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/m3_tabs_line_indicator.xml: 381 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/m3_tabs_rounded_line_indicator.xml: 925 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/m3_tabs_transparent_background.xml: 436 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/material_ic_menu_arrow_up_black_24dp.xml: 725 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_dialog_background.xml: 1154 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_ic_error.xml: 698 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-v21/mtrl_navigation_bar_item_background.xml: 193 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_popupmenu_background.xml: 735 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v23/mtrl_popupmenu_background_overlay.xml: 1338 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/mtrl_tabs_default_indicator.xml: 421 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png: 163 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png: 412 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png: 251 bytes (replaced with small dummy file of size 67 bytes)
@@ -10629,7 +10505,6 @@ Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dar
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 1138 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1638 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 1255 bytes (replaced with small dummy file of size 77 bytes)
-Skipped unused resource res/drawable-anydpi-v24/ic_launcher_foreground.xml: 1793 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/interpolator-v21/mtrl_fast_out_slow_in.xml: 404 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/com_facebook_tooltip_bubble.xml: 4702 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/design_bottom_navigation_item.xml: 4580 bytes (replaced with small dummy file of size 9 bytes)
@@ -10644,17 +10519,14 @@ Skipped unused resource res/layout/design_navigation_item_separator.xml: 612 byt
 Skipped unused resource res/layout/design_navigation_item_subheader.xml: 1120 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/design_navigation_menu.xml: 782 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/m3_alert_dialog.xml: 5829 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/m3_alert_dialog_actions.xml: 3498 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v22/m3_alert_dialog_actions.xml: 3589 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/m3_alert_dialog_actions.xml: 3589 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/m3_alert_dialog_title.xml: 1721 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/material_chip_input_combo.xml: 330 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/material_textinput_timepicker.xml: 1818 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/material_timepicker_dialog.xml: 7818 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v22/material_timepicker_dialog.xml: 7991 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/material_timepicker_dialog.xml: 7991 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/material_timepicker_textinput_display.xml: 990 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/mtrl_alert_dialog.xml: 5837 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/mtrl_alert_dialog_actions.xml: 3356 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v22/mtrl_alert_dialog_actions.xml: 3617 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/mtrl_alert_dialog_actions.xml: 3617 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/mtrl_alert_dialog_title.xml: 1717 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/mtrl_alert_select_dialog_item.xml: 1123 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/mtrl_alert_select_dialog_multichoice.xml: 1928 bytes (replaced with small dummy file of size 9 bytes)

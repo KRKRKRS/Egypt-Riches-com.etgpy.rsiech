@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_load.jpg.flat",
+        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\drawable-xxhdpi\\load.jpg"
+    },
+    {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_rock1.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xxhdpi\\rock1.png"
     },
@@ -32,20 +36,16 @@
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-hdpi\\paper1.png"
     },
     {
-        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\drawable_load.jpg.flat",
-        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\drawable\\load.jpg"
-    },
-    {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_scissors1.png.flat",
-        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xxhdpi\\scissors1.png"
-    },
-    {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_scissors1.png.flat",
+        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xxhdpi\\scissors1.png"
     },
     {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
@@ -56,12 +56,20 @@
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_bg.jpg.flat",
+        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\drawable-xxhdpi\\bg.jpg"
+    },
+    {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_paper1.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-mdpi\\paper1.png"
     },
     {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_launcher_background.xml.flat",
+        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_background.xml"
     },
     {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -112,10 +120,6 @@
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_paper1.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xxxhdpi\\paper1.png"
     },
@@ -126,10 +130,6 @@
     {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg.jpg.flat",
-        "source": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\src\\main\\res\\drawable\\bg.jpg"
     },
     {
         "merged": "D:\\Programming\\Gamblords\\Egypt Riches\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",

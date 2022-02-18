@@ -323,7 +323,7 @@
 
 
 # End of content from C:\Users\rkrav\.gradle\caches\transforms-3\a88d754c1139ce79d2a071bd2f51c5d4\transformed\material-1.5.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\rkrav\.gradle\caches\transforms-3\7a185bade81dd298e272607771134f53\transformed\jetified-OneSignal-4.6.6\proguard.txt
+# The proguard configuration file for the following section is C:\Users\rkrav\.gradle\caches\transforms-3\06ec86778d2c1c41f39dc6aaeb98f9e1\transformed\jetified-OneSignal-4.6.7\proguard.txt
 -dontwarn com.onesignal.**
 
 # These 2 methods are called with reflection.
@@ -413,7 +413,7 @@
 -keep class com.onesignal.JobIntentService$* {*;}
 
 -keep class com.onesignal.OneSignalUnityProxy {*;}
-# End of content from C:\Users\rkrav\.gradle\caches\transforms-3\7a185bade81dd298e272607771134f53\transformed\jetified-OneSignal-4.6.6\proguard.txt
+# End of content from C:\Users\rkrav\.gradle\caches\transforms-3\06ec86778d2c1c41f39dc6aaeb98f9e1\transformed\jetified-OneSignal-4.6.7\proguard.txt
 # The proguard configuration file for the following section is C:\Users\rkrav\.gradle\caches\transforms-3\2f383f0a210a9a567965600590c75a7b\transformed\jetified-facebook-android-sdk-12.3.0\proguard.txt
 # To enable ProGuard in your project, edit project.properties
 # to define the proguard.config property as described in that file.

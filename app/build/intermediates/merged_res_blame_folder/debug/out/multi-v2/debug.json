@@ -10641,6 +10641,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\rkrav\\.gradle\\caches\\transforms-3\\06ec86778d2c1c41f39dc6aaeb98f9e1\\transformed\\jetified-OneSignal-4.6.7\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,226,389,470",
+                        "endColumns": "170,162,80,79",
+                        "endOffsets": "221,384,465,545"
+                    },
+                    "to": {
+                        "startLines": "1706,1707,1708,1709",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "107328,107499,107662,107743",
+                        "endColumns": "170,162,80,79",
+                        "endOffsets": "107494,107657,107738,107818"
+                    }
+                },
+                {
                     "source": "C:\\Users\\rkrav\\.gradle\\caches\\transforms-3\\7efc25078c2b3a6d54e91f13a54a624c\\transformed\\jetified-play-services-basement-18.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -10674,23 +10691,6 @@
                         "endLines": "622,623,624,625,626,627,628,629,1680,1681,1682,1683,1684,1685,1686,1687,1689,1690,1691,1692,1693,1694,1695,1696,1697,10874,11785",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "32447,32527,32617,32707,32787,32868,32948,33028,104179,104360,104485,104592,104772,104895,105011,105114,105469,105574,105755,105880,106055,106203,106266,106328,106407,691664,737090"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\rkrav\\.gradle\\caches\\transforms-3\\7a185bade81dd298e272607771134f53\\transformed\\jetified-OneSignal-4.6.6\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,226,389,470",
-                        "endColumns": "170,162,80,79",
-                        "endOffsets": "221,384,465,545"
-                    },
-                    "to": {
-                        "startLines": "1706,1707,1708,1709",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "107328,107499,107662,107743",
-                        "endColumns": "170,162,80,79",
-                        "endOffsets": "107494,107657,107738,107818"
                     }
                 },
                 {

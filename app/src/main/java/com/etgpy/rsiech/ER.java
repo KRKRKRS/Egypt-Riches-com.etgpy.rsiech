@@ -200,7 +200,7 @@ public class ER extends AppCompatActivity {
             webViewetgpy.setVisibility(View.VISIBLE);
             progressBar.setVisibility(ProgressBar.INVISIBLE);
 
-            if (url.contains(CNSTN.decode("NDA0"))) {
+            if (url.contains(CNSTN.decode("Z2FwcHM9NDA0"))) {
                 goToGame();
                 finish();
             }
